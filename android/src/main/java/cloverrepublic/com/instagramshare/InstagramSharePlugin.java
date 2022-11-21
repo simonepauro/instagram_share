@@ -122,8 +122,8 @@ public class InstagramSharePlugin implements MethodCallHandler, PluginRegistry.R
             shareIntent.setPackage(INSTAGRAM_PACKAGE_NAME);
             shareIntent.setType(mediaType);
             shareIntent.putExtra(Intent.EXTRA_STREAM, uri);
-            shareIntent.putExtra("top_background_color", "#000000");
-            shareIntent.putExtra("bottom_background_color", "#000000");
+            shareIntent.putExtra("top_background_color", "000000");
+            shareIntent.putExtra("bottom_background_color", "000000");
             shareIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             try {
                 mRegistrar.context().startActivity(shareIntent);
